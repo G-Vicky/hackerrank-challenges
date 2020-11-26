@@ -1,0 +1,15 @@
+import numpy as np
+# n, m = input().split(" ")
+# a = list(map(int, input().split()))
+# b = list(map(int, input().split()))
+# a = numpy.array(a, float)
+# b = numpy.array(b, float)
+# print(numpy.add(a, b))
+# print(numpy.subtract(a, b))
+# print(numpy.multiply(a, b))
+# print(a//b)
+# print(a**b)
+
+n, m = map(int, input().split())
+a, b = (np.array([input().split() for _ in range(n)], dtype=int) for _ in range(2))
+print(a+b, a-b, a*b, a//b, a%b, a**b, sep='\n')
